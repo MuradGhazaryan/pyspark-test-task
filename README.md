@@ -5,7 +5,7 @@ This repository contains a solution for a PySpark test task.
 The script `test_spark.py` demonstrates basic PySpark functionality: creating a DataFrame, displaying it, and performing a simple filter operation.
 
 ## Requirements
-- Python 3.8
+- Python 3.10.11
 - PySpark 3.4.0
 - Spark 3.4.4 (pre-built for Hadoop 3)
 - Virtual environment (recommended)
@@ -21,19 +21,19 @@ product_categories/
 ├── test_solution.py # Test for solution.py
 ├── test_spark.py # PySpark example script
 ├── __pycache__/ # Python cache (ignored)
-├── venv*/ # Virtual environments (ignored)
+├── .venv*/ # Virtual environments (ignored)
 ```
 
 ## Setup Instructions
 
-1. **Install Python 3.8**  
-   Make sure Python 3.8 is installed on your system and available in your system PATH.
+1. **Install Python 3.10.11**  
+   Ensure Python 3.10.11 is installed on your system and available in your system PATH.
 
 2. **Create and activate a virtual environment**  
    Run the following commands in PowerShell:
    ```powershell
-   python -m venv .venv_py38
-   .\.venv_py38\Scripts\activate
+   python -m venv .venv_py310
+   .\.venv_py310\Scripts\activate
    ```
 
 3. **Install PySpark**  
@@ -59,8 +59,8 @@ product_categories/
 6. **Set PySpark environment variables**  
    These commands tell PySpark which Python interpreter to use:
    ```powershell
-   $env:PYSPARK_PYTHON = "C:\\Users\\Admin\\product_categories\\.venv_py38\\Scripts\\python.exe"
-   $env:PYSPARK_DRIVER_PYTHON = "C:\\Users\\Admin\\product_categories\\.venv_py38\\Scripts\\python.exe"
+   $env:PYSPARK_PYTHON = "C:\\Users\\Admin\\product_categories\\.venv_py310\\Scripts\\python.exe"
+   $env:PYSPARK_DRIVER_PYTHON = "C:\\Users\\Admin\\product_categories\\.venv_py310\\Scripts\\python.exe"
    ```
 
 ## Running the Script
